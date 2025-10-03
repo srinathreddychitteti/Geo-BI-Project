@@ -15,5 +15,5 @@ APP_USER_AGENT = "GeoChatbot/1.0 (srinath@example.com)" # TODO: Replace with you
 # --- Overpass API Query Settings ---
 # Search radius in meters around the geocoded coordinates.
 SEARCH_RADIUS_METERS = 1500
-# API timeout in seconds.
+
 API_TIMEOUT_SECONDS = 25
