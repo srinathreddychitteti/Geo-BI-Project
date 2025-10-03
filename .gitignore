@@ -1,0 +1,49 @@
+# -------------------------
+# Environment & Dependencies
+# -------------------------
+# Ignore the virtual environment folder
+/testenv/
+
+# Ignore environment variables file (contains secrets!)
+.env
+
+
+# -------------------------
+# Python Cache & Artifacts
+# -------------------------
+# Ignore Python bytecode files and cache folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# -------------------------
+# Testing
+# -------------------------
+# Ignore pytest's cache directory
+.pytest_cache/
+
+# Ignore coverage reports
+.coverage
+htmlcov/
+
+
+# -------------------------
+# IDE / Editor Specific
+# -------------------------
+# Ignore VS Code specific files
+.vscode/
+
+# Ignore PyCharm specific files
+.idea/
+
+
+# -------------------------
+# OS Specific
+# -------------------------
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
