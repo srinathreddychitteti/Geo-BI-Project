@@ -79,14 +79,14 @@ def main():
             return
 
         with st.spinner(f"Analyzing the market for '{business_type_query}' in '{location_query}'..."):
-            # Step 1: Fetch Data
+
             business_data = get_business_data(location_query, business_type_query)
             
             result_dict = {"location": location_query, "type": business_type_query}
 
             if isinstance(business_data, list):
                 if business_data:
-                    # Step 2: Generate Analysis if data is found
+                    
                     analysis_result = generate_analysis(business_data, business_type_query, location_query)
                     result_dict.update({
                         "data": business_data,
@@ -95,7 +95,7 @@ def main():
                     })
                 else:
                     result_dict["status"] = "no_results"
-            else: # business_data is an error string
+            else: 
                 result_dict.update({"analysis": business_data, "status": "error"})
             
             st.session_state.last_result = result_dict
